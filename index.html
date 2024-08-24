@@ -138,16 +138,15 @@
 
         #objetivos {
             display: flex;
-            flex-direction: column; /* Apila el texto y la lista verticalmente */
-            align-items: center;
-            justify-content: center;
-            text-align: center; /* Centrado del texto y lista */
+            align-items: flex-start; /* Alinea el contenido al inicio */
+            justify-content: flex-start; /* Alinea el contenido a la izquierda */
+            text-align: left; /* Texto alineado a la izquierda */
             margin-bottom: 40px; /* Espacio adicional debajo de la sección */
         }
 
-        #objetivos p {
-            font-size: 25px; /* Tamaño de fuente aumentado en 5px */
-            margin: 0 0 20px 0; /* Espacio entre el texto y la lista */
+        #objetivos .texto {
+            margin-right: 20px; /* Espacio entre el texto y la imagen */
+            font-size: 25px; /* Tamaño de fuente para el título */
         }
 
         #objetivos ul {
@@ -161,7 +160,6 @@
             width: 25%; /* La imagen ocupa el mismo tamaño que la imagen en la sección de inicio */
             height: auto;
             border-radius: 20px; /* Bordes redondos */
-            margin-top: 20px; /* Espacio entre la lista y la imagen */
         }
 
         h2 {
@@ -204,13 +202,15 @@
         </section>
 
         <section id="objetivos">
-            <p>Objetivos:</p>
-            <ul>
-                <li>Tomar las opiniones sugerencias, proposiciones, y descontentos de los y las estudiantes de la prepa CEDI.</li>
-                <li>Completar con éxito todas las actividades en el planeador de la campaña, pero que al mismo tiempo haya flexibilidad y se puedan agregar o modificar estas propuestas.</li>
-                <li>Recaudar una cantidad monetaria de $7500 pesos gracias a todas las vendimias de alimentos que se hagan a lo largo del ciclo. (Algo que se logró y se superó el año pasado en secundaria).</li>
-                <li>Hacer de la escuela un lugar más agradable y próspero para todos los y las estudiantes!</li>
-            </ul>
+            <div class="texto">
+                <p>Objetivos:</p>
+                <ul>
+                    <li>Tomar las opiniones sugerencias, proposiciones, y descontentos de los y las estudiantes de la prepa CEDI.</li>
+                    <li>Completar con éxito todas las actividades en el planeador de la campaña, pero que al mismo tiempo haya flexibilidad y se puedan agregar o modificar estas propuestas.</li>
+                    <li>Recaudar una cantidad monetaria de $7500 pesos gracias a todas las vendimias de alimentos que se hagan a lo largo del ciclo. (Algo que se logró y se superó el año pasado en secundaria).</li>
+                    <li>Hacer de la escuela un lugar más agradable y próspero para todos los y las estudiantes!</li>
+                </ul>
+            </div>
             <img src="images/objetivos.jpeg" alt="Objetivos">
         </section>
     </main>
