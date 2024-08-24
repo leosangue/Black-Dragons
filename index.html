@@ -138,22 +138,16 @@
 
         #objetivos {
             display: flex;
+            flex-direction: column; /* Apila el texto y la lista verticalmente */
             align-items: center;
             justify-content: center;
-            text-align: justify; /* Justificar el texto */
+            text-align: center; /* Centrado del texto y lista */
             margin-bottom: 40px; /* Espacio adicional debajo de la sección */
         }
 
-        #objetivos img {
-            width: 25%; /* La imagen ocupa el mismo tamaño que la imagen en la sección de inicio */
-            height: auto;
-            border-radius: 20px; /* Bordes redondos */
-            margin-left: 20px; /* Espacio entre la imagen y el texto */
-        }
-
         #objetivos p {
-            font-size: 20px; /* Tamaño del texto igual que el texto en la sección de ideología */
-            margin: 0; /* Elimina márgenes superiores e inferiores */
+            font-size: 25px; /* Tamaño de fuente aumentado en 5px */
+            margin: 0 0 20px 0; /* Espacio entre el texto y la lista */
         }
 
         #objetivos ul {
@@ -161,6 +155,13 @@
             margin: 0;
             padding-left: 20px; /* Espacio de la lista desde el borde izquierdo */
             font-size: 20px; /* Tamaño de fuente igual al del párrafo */
+        }
+
+        #objetivos img {
+            width: 25%; /* La imagen ocupa el mismo tamaño que la imagen en la sección de inicio */
+            height: auto;
+            border-radius: 20px; /* Bordes redondos */
+            margin-top: 20px; /* Espacio entre la lista y la imagen */
         }
 
         h2 {
