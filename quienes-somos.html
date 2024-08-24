@@ -106,11 +106,11 @@
 
         #inicio .content {
             text-align: left;
-            margin-right: 20px;
+            margin: 0 20px;
         }
 
         #inicio p {
-            font-size: 25px;
+            font-size: 30px; /* Aumentar tamaño del texto */
             margin: 10px 0; /* Espacio arriba y abajo del párrafo */
         }
 
@@ -121,11 +121,17 @@
         }
 
         #inicio .title {
-            font-size: 28px; /* Un poco más grande que el párrafo */
+            font-size: 32px; /* Aumentar tamaño del texto */
             color: #b30000;
             font-weight: bold;
             font-family: 'Regular', Arial, sans-serif;
             margin-bottom: 10px; /* Espacio debajo de "PRESIDENTE" */
+        }
+
+        /* Estilo para la imagen a la izquierda */
+        #inicio img.left {
+            order: -1; /* Mover la imagen a la izquierda */
+            margin-right: 20px; /* Espacio entre imagen y texto */
         }
 
         h2 {
@@ -165,11 +171,11 @@
             <img src="images/leo.png" alt="Leonardo Sandoval">
         </section>
         <section id="inicio">
+            <img src="images/erick.jpg" alt="Erick Ramos" class="left">
             <div class="content">
                 <div class="title">SECRETARIO</div>
                 <p>Pendiente</p>
             </div>
-            <img src="images/erick.jpg" alt="Erick Ramos">
         </section>
         <section id="inicio">
             <div class="content">
@@ -180,6 +186,5 @@
         </section>
     </main>
 
-    
 </body>
 </html>
