@@ -29,6 +29,7 @@
         }
 
         header {
+            position: relative;
             background-image: url('images/cedi-1.jpeg');
             background-size: cover;
             background-position: center;
@@ -38,12 +39,26 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
+            overflow: hidden; /* Asegura que el overlay cubra todo el header */
+        }
+
+        /* Capa roja semi-transparente */
+        header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(179, 0, 0, 0.5); /* Rojo semi-transparente */
+            z-index: 1; /* Coloca el overlay detrás del contenido del header */
         }
 
         header img {
             max-width: 150px;
             height: auto;
             border-radius: 100px; /* Bordes redondos para la imagen */
+            z-index: 2; /* Asegura que la imagen esté sobre el overlay */
         }
 
         header h1 {
@@ -52,6 +67,7 @@
             margin: 0;
             margin-left: 20px;
             font-family: 'Black Dragons', Tahoma, sans-serif; /* Aplicando fuente personalizada */
+            z-index: 2; /* Asegura que el texto esté sobre el overlay */
         }
 
         nav {
