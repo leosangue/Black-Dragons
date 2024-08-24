@@ -26,6 +26,7 @@
             color: white;
             margin: 0;
             padding: 0;
+            padding-bottom: 60px; /* Espacio para el footer */
         }
 
         header {
@@ -168,13 +169,18 @@
         }
 
         footer {
-            background-color: #1a1a1a;
-            color: white;
-            text-align: center;
-            padding: 15px;
             position: fixed;
-            width: 100%;
             bottom: 0;
+            right: 0;
+            background-color: #1a1a1a;
+            padding: 10px;
+            z-index: 1000; /* Asegura que esté por encima del contenido */
+            border-top-left-radius: 15px; /* Bordes redondeados en la esquina superior izquierda */
+        }
+
+        footer img {
+            width: 100px; /* Tamaño de la imagen del footer */
+            height: auto;
         }
     </style>
 </head>
@@ -217,7 +223,7 @@
     </main>
 
     <footer>
-        TODOS LOS DERECHOS RESERVADOS
+        <img src="images/cedi-2.jpeg" alt="Logo Cedi">
     </footer>
 </body>
 </html>
