@@ -182,11 +182,29 @@
             width: 100px; /* Tamaño de la imagen del footer */
             height: auto;
         }
+
+        #video-section {
+            display: flex;
+            align-items: center;
+            justify-content: center; /* Centra el contenido horizontalmente */
+            margin: 40px 0;
+        }
+
+        #video-section video {
+            width: 30%; /* Ajusta el tamaño del video aquí */
+            margin-right: 20px; /* Espacio entre el video y el texto */
+        }
+
+        #video-section .texto {
+            font-size: 20px; /* Ajusta el tamaño del texto según tus necesidades */
+            color: white; /* Color del texto para que contraste con el fondo oscuro */
+            max-width: 50%; /* Asegura que el texto no ocupe demasiado espacio */
+        }
     </style>
 </head>
 <body>
     <header>
-        
+        <img src="images/blackdragons.jpg" alt="Black Dragons Logo">
         <h1>Black Dragons</h1>
     </header>
 
@@ -203,12 +221,15 @@
             <img src="images/blackdragons-logo2.png" alt="Black Dragons Logo 2">
         </section>
 
-        <!-- Sección donde se incluye el video -->
-        <section id="video-section" style="text-align:center; margin: 40px 0;">
-            <video controls width="30%">
+        <!-- Sección donde se incluye el video y el texto -->
+        <section id="video-section">
+            <video controls>
                 <source src="images/vid.mp4" type="video/mp4">
                 Tu navegador no soporta el elemento de video.
             </video>
+            <div class="texto">
+                Despedida del ciclo por la sociedad de alumnos del ciclo pasado.
+            </div>
         </section>
 
         <section id="ideologia">
