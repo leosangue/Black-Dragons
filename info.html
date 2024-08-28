@@ -5,6 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Black Dragons - Inicio</title>
     <style>
+        @font-face {
+            font-family: 'Black Dragons';
+            src: url('fonts/blackdragons.ttf') format('truetype');
+        }
+
+        @font-face {
+            font-family: 'Regular';
+            src: url('fonts/regular.ttf') format('truetype');
+        }
+
+        @font-face {
+            font-family: 'Indice';
+            src: url('fonts/indice.otf') format('opentype');
+        }
+
         body {
             font-family: Arial, sans-serif;
             background-color: black;
@@ -102,25 +117,6 @@
             border-radius: 20px; /* Bordes redondos */
         }
 
-        #video-section {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center; /* Centra el contenido horizontalmente */
-            margin: 40px 0;
-        }
-
-        #video-section video {
-            width: 30%; /* Ajusta el tamaño del video aquí */
-            margin-bottom: 10px; /* Espacio debajo del video */
-        }
-
-        #video-section .texto {
-            font-size: 20px; /* Ajusta el tamaño del texto según tus necesidades */
-            color: white; /* Color del texto para que contraste con el fondo oscuro */
-            text-align: center; /* Centrar el texto debajo del video */
-        }
-
         #ideologia {
             display: flex;
             align-items: center;
@@ -142,6 +138,37 @@
             text-align: center; /* Centra el texto */
         }
 
+        #objetivos {
+            display: flex;
+            align-items: center; /* Centra verticalmente el contenido */
+            justify-content: flex-start; /* Alinea el contenido a la izquierda */
+            text-align: left; /* Texto alineado a la izquierda */
+            margin-bottom: 40px; /* Espacio adicional debajo de la sección */
+            padding-left: 40px; /* Mayor separación desde el borde izquierdo de la página */
+        }
+
+        #objetivos .texto {
+            margin-right: 20px; /* Espacio entre el texto y la imagen */
+            font-size: 25px; /* Tamaño de fuente para el título */
+        }
+
+        #objetivos ul {
+            list-style-type: disc;
+            margin: 0;
+            padding-left: 20px; /* Espacio de la lista desde el borde izquierdo */
+            font-size: 20px; /* Tamaño de fuente igual al del párrafo */
+        }
+
+        #objetivos img {
+            width: 25%; /* La imagen ocupa el mismo tamaño que la imagen en la sección de inicio */
+            height: auto;
+            border-radius: 20px; /* Bordes redondos */
+        }
+
+        h2 {
+            color: #b30000;
+        }
+
         footer {
             position: fixed;
             bottom: 0;
@@ -155,6 +182,24 @@
         footer img {
             width: 100px; /* Tamaño de la imagen del footer */
             height: auto;
+        }
+
+        #video-section {
+            display: flex;
+            align-items: center;
+            justify-content: center; /* Centra el contenido horizontalmente */
+            margin: 40px 0;
+        }
+
+        #video-section video {
+            width: 30%; /* Ajusta el tamaño del video aquí */
+            margin-right: 20px; /* Espacio entre el video y el texto */
+        }
+
+        #video-section .texto {
+            font-size: 20px; /* Ajusta el tamaño del texto según tus necesidades */
+            color: white; /* Color del texto para que contraste con el fondo oscuro */
+            max-width: 50%; /* Asegura que el texto no ocupe demasiado espacio */
         }
     </style>
 </head>
@@ -181,12 +226,39 @@
                 <source src="images/vid.mp4" type="video/mp4">
                 Tu navegador no soporta el elemento de video.
             </video>
-            <p class="texto">Discurso de despedida sociedad de alumnos 2023-2024</p>
+            <p style="text-align: center;">Discurso de despedida sociedad de alumnos 2023-2024</p>            
+            <div class="texto">
+                <p>
+                    Black Dragons es una campaña que estuvo presente dentro de la sociedad de alumnos durante el ciclo 2023 - 2024 en secundaria, y ahora, conformada por las mismas personas, se postulará de nuevo en la prepa CEDI. Algunos de nuestras actividades hechas el ciclo pasado fueron:
+                </p>
+                <ul>
+                    <li>
+                        <strong>Vendimias mensuales:</strong> Cada mes se hizo una vendimia en la que se vendieron diferentes alimentos que eligieron por los mismos estudiantes. Esta fue nuestra mayor fuente de fondos. En total logramos ejecutar 8 vendimias exitosamente.
+                    </li>
+                    <li>
+                        <strong>Torneo de tochito:</strong> Se organizó un torneo de tochito con ayuda del profesor Enciso en el que durante una semana, se hicieron partidos en el domo durante el recreo, y fácilmente 3/4 de la secundaria asistía diariamente. Hubo premio y reconocimiento al equipo ganador.
+                    </li>
+                    <li>
+                        <strong>Torneo de videojuegos:</strong> Se organizó un torneo del videojuego FIFA24, y de hecho el primero que se había hecho en secundaria, en el que parejas de personas pudieron inscribirse, y los partidos se hicieron en un salón, donde también había espectadores. Igualmente hubo premio y reconocimiento.
+                    </li>
+                    <li>
+                        <strong>Concurso de decoración de Navidad y Día de Muertos:</strong> En estas fechas de celebración se organizaron concursos de decoración de puertas de salones en el que los alumnos podían decorar la puerta de su salón, y los maestros eran los jueces que calificaron y eligieron la puerta que más les gustó.
+                    </li>
+                    <li>
+                        <strong>Evento de envío de rosas y donas anónimas por el Día de San Valentín:</strong> Se organizó una actividad en la que los alumnos podían pagar por rosas y donas, que serían entregadas el mero día de San Valentín.
+                    </li>
+                </ul>
+                <p>
+                    Y entre muchas otras cosas fueron las actividades que organizó la sociedad de alumnos el año pasado.
+                </p>
+
+            </div>
         </section>
 
         <section id="ideologia">
             <p>En conclusión, somos una campaña con experiencia en esta escuela, y este año queremos ser parte de la sociedad de alumnos de nuevo modificando y agregando propuestas beneficiosas para todo el alumnado.</p>
         </section>
+
     </main>
 
     <footer>
@@ -194,4 +266,3 @@
     </footer>
 </body>
 </html>
-
