@@ -3,31 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Black Dragons - Propuestas</title>
+    <title>Black Dragons - Inicio</title>
     <style>
+        @font-face {
+            font-family: 'Black Dragons';
+            src: url('fonts/blackdragons.ttf') format('truetype');
+        }
+
+        @font-face {
+            font-family: 'Regular';
+            src: url('fonts/regular.ttf') format('truetype');
+        }
+
+        @font-face {
+            font-family: 'Indice';
+            src: url('fonts/indice.otf') format('opentype');
+        }
+
         body {
             font-family: Arial, sans-serif;
             background-color: black;
             color: white;
             margin: 0;
             padding: 0;
+            padding-bottom: 60px; /* Espacio para el footer */
         }
 
         header {
-            background-color: #b30000; /* Rojo oscuro */
-            padding: 20px;
+            position: relative;
+            background-image: url('images/cedi-1.jpeg');
+            background-size: cover;
+            background-position: center;
+            padding: 10px 20px;
             text-align: center;
+            border-radius: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            overflow: hidden;
+        }
+
+        header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(179, 0, 0, 0.5);
+            z-index: 1;
         }
 
         header img {
             max-width: 150px;
             height: auto;
+            border-radius: 100px;
+            z-index: 2;
+        }
+
+        header h1 {
+            color: white;
+            font-size: 48px;
+            margin: 0;
+            margin-left: 20px;
+            font-family: 'Black Dragons', Tahoma, sans-serif;
+            z-index: 2;
         }
 
         nav {
             background-color: #1a1a1a;
             padding: 15px;
             text-align: center;
+            font-family: 'Indice', Tahoma, sans-serif;
         }
 
         nav a {
@@ -35,38 +82,110 @@
             text-decoration: none;
             margin: 0 15px;
             font-weight: bold;
+            background-color: orange;
+            padding: 10px 20px;
+            border-radius: 20px;
+            display: inline-block;
         }
 
         nav a:hover {
-            text-decoration: underline;
+            background-color: #ff9933;
         }
 
         main {
             padding: 20px;
+            font-family: 'Regular', Arial, sans-serif;
         }
 
-        h1, h2 {
+        #inicio {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center; /* Centrado horizontal */
+            margin-bottom: 40px; /* Espacio adicional debajo de la sección */
+        }
+
+        #inicio p {
+            font-size: 25px; /* Tamaño del texto aumentado */
+            margin-right: 20px; /* Espacio entre el texto y la imagen */
+            margin: 0; /* Elimina márgenes superiores e inferiores */
+        }
+
+        #inicio img {
+            width: 25%; /* La imagen ocupa un poco menos de 1/3 del ancho */
+            height: auto;
+            border-radius: 20px; /* Bordes redondos */
+        }
+
+        #ideologia {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: justify; /* Justificar el texto */
+            margin-bottom: 40px; /* Espacio adicional debajo de la sección */
+        }
+
+        #ideologia img {
+            width: 16.67%; /* Reducido a 2/3 de su tamaño original de 25% */
+            height: auto;
+            border-radius: 20px; /* Bordes redondos como en la imagen de arriba */
+            margin-right: 20px; /* Espacio entre la imagen y el texto */
+        }
+
+        #ideologia p {
+            font-size: 20px; /* Tamaño del texto 5 píxeles más pequeño */
+            margin: 0; /* Elimina márgenes superiores e inferiores */
+        }
+
+        #objetivos {
+            display: flex;
+            align-items: center; /* Centra verticalmente el contenido */
+            justify-content: flex-start; /* Alinea el contenido a la izquierda */
+            text-align: left; /* Texto alineado a la izquierda */
+            margin-bottom: 40px; /* Espacio adicional debajo de la sección */
+            padding-left: 40px; /* Mayor separación desde el borde izquierdo de la página */
+        }
+
+        #objetivos .texto {
+            margin-right: 20px; /* Espacio entre el texto y la imagen */
+            font-size: 25px; /* Tamaño de fuente para el título */
+        }
+
+        #objetivos ul {
+            list-style-type: disc;
+            margin: 0;
+            padding-left: 20px; /* Espacio de la lista desde el borde izquierdo */
+            font-size: 20px; /* Tamaño de fuente igual al del párrafo */
+        }
+
+        #objetivos img {
+            width: 25%; /* La imagen ocupa el mismo tamaño que la imagen en la sección de inicio */
+            height: auto;
+            border-radius: 20px; /* Bordes redondos */
+        }
+
+        h2 {
             color: #b30000;
         }
 
-        ul {
-            list-style-type: square;
-            margin: 0;
-            padding: 0;
-        }
-
-        ul li {
-            margin: 10px 0;
-        }
-
         footer {
-            background-color: #1a1a1a;
-            color: white;
-            text-align: center;
-            padding: 15px;
             position: fixed;
-            width: 100%;
             bottom: 0;
+            right: 0;
+            background-color: #1a1a1a;
+            padding: 10px;
+            z-index: 1000; /* Asegura que esté por encima del contenido */
+            border-top-left-radius: 15px; /* Bordes redondeados en la esquina superior izquierda */
+        }
+
+        footer img {
+            width: 100px; /* Tamaño de la imagen del footer */
+            height: auto;
+        }
+        iframe {
+            width: 100%;
+            height: 100vh; /* Hace que el iframe ocupe toda la altura de la ventana */
+            border: none; /* Elimina el borde del iframe */
         }
     </style>
 </head>
@@ -74,20 +193,21 @@
     <header>
         <img src="images/blackdragons.jpg" alt="Black Dragons Logo">
         <h1>Black Dragons</h1>
-        <p>Campaña de Sociedad de Alumnos</p>
     </header>
 
     <nav>
         <a href="index.html">Inicio</a>
         <a href="quienes-somos.html">Quiénes Somos</a>
         <a href="propuestas.html">Propuestas</a>
-        <a href="info.html">Info</a>
+        <a href="info.html">Historia</a>
     </nav>
 
     <main>
-        <section id="propuestas">
-            <h2>Propuestas</h2>
-            <ul>
-                <li>Mejora de las instalaciones deportivas.</li>
-                <li>Organización de eventos culturales y recreativos.</li>
-                <li>Implementación 
+        
+        <a href="https://www.instagram.com/blackdragons.cedi/" target="_blank" style="display: flex; align-items: center; text-decoration: none; color: white;">
+            <img src="images/ig.webp" alt="Instagram" style="width: 100px; height: auto; margin-right: 10px;">
+            <span style="font-size: 18px; font-weight: bold;">&lt;--- Síguenos en Instagram</span>
+        </a>
+        </main>
+</body>
+</html>
