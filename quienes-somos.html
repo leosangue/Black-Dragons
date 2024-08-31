@@ -98,16 +98,17 @@
 
         #inicio {
             display: flex;
+            flex-direction: column; /* Cambiar a disposición vertical */
             align-items: center;
-            justify-content: center;
             text-align: center;
-            margin-bottom: 40px; /* Añadir espacio debajo de cada sección */
+            margin-bottom: 40px;
         }
 
         #inicio .content {
-            text-align: left;
+            text-align: center;
             margin: 0 20px;
         }
+
 
         #inicio p {
             font-size: 30px; /* Aumentar tamaño del texto */
@@ -118,7 +119,9 @@
             width: 25%;
             height: auto;
             border-radius: 20px;
+            margin-top: 20px; /* Añadir margen superior para espacio entre texto e imagen */
         }
+
 
         #inicio .title {
             font-size: 32px; /* Aumentar tamaño del texto */
@@ -171,7 +174,7 @@
             <img src="images/leo.png" alt="Leonardo Sandoval">
         </section>
         <section id="inicio">
-            <img src="images/erick.jpg" alt="Erick Ramos" class="left">
+            <img src="images/erick.jpg" alt="Erick Ramos">
             <div class="content">
                 <div class="title">SECRETARIO</div>
                 <p>Hola, mi nombre es Erick Ramos, y actualmente curso el tercer semestre de prepa. Yo estaré presente en la campaña de Black Dragons durante este ciclo, y estoy dispuesto a participar y organizar en todas las actividades que se requiera.</p>
