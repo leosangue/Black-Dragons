@@ -223,18 +223,35 @@
             text-align: center; /* Centra el contenido dentro del contenedor de la galería */
         }
 
-        #galeria .imagenes {
-            display: block; /* Cambia el display a block para disposición vertical */
+        .galeria-contenedor {
+            display: flex; /* Usa flexbox para alinear las imágenes y el video */
+            align-items: flex-start; /* Alinea los elementos al inicio (parte superior) */
+            justify-content: center; /* Centra los elementos en el contenedor */
+            gap: 20px; /* Espacio entre las imágenes y el video */
         }
 
-        #galeria img {
-            display: block; /* Asegura que cada imagen esté en su propia línea */
+        .imagenes {
+            display: flex; /* Usa flexbox para alinear las imágenes verticalmente */
+            flex-direction: column; /* Alinea las imágenes en una columna */
+            gap: 20px; /* Espacio entre las imágenes */
+        }
+
+        .imagenes img {
             width: auto; /* Mantiene el tamaño proporcional de la imagen */
             height: 300px; /* Mantiene la altura de la imagen */
             border-radius: 15px; /* Bordes redondeados */
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para las imágenes */
-            margin: 10px auto; /* Espacio entre las imágenes verticalmente y centra las imágenes */
-}
+        }
+
+        .video {
+            display: flex; /* Asegura que el video se alinee correctamente */
+            align-items: center; /* Centra el video verticalmente */
+        }
+
+        .video video {
+            width: 300px; /* Ajusta el tamaño del video según tus necesidades */
+            height: auto; /* Mantiene la proporción del video */
+        }
 
     </style>
 </head>
@@ -291,16 +308,21 @@
         </section>
         <section id="galeria">
             <h2>Galería</h2>
-            <div class="imagenes">
-                <img src="images/torneofifa.jpg" alt="Imagen 1">
-                <img src="images/torneofifa2.jpg" alt="Imagen 2"> <!-- Nueva imagen añadida aquí -->
-                <img src="images/Collage letreros.png" alt="Imagen 3"> <!-- Nueva imagen añadida aquí -->
-                <video controls>
-                    <source src="images/vid.mp4" type="video/mp4">
-                    Tu navegador no soporta el elemento de video.
-                </video>
+            <div class="galeria-contenedor">
+                <div class="imagenes">
+                    <img src="images/torneofifa.jpg" alt="Imagen 1">
+                    <img src="images/torneofifa2.jpg" alt="Imagen 2">
+                    <img src="images/Collage letreros.png" alt="Imagen 3">
+                </div>
+                <div class="video">
+                    <video controls>
+                        <source src="images/vid.mp4" type="video/mp4">
+                        Tu navegador no soporta el elemento de video.
+                    </video>
+                </div>
             </div>
         </section>
+        
         
         
         <a href="https://www.instagram.com/blackdragons.cedi/" target="_blank" style="display: flex; align-items: center; text-decoration: none; color: white;">
