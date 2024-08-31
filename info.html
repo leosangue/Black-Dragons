@@ -213,29 +213,28 @@
             list-style-position: inside; /* Hace que las viñetas se alineen con el texto */
         }
 
-        #galeria {
-            text-align: center;
-            margin: 40px 0; /* Espacio alrededor de la sección */
-        }
-
         #galeria h2 {
             color: #b30000; /* Color del subtítulo */
             font-family: 'Black Dragons', Tahoma, sans-serif;
             margin-bottom: 20px; /* Espacio debajo del subtítulo */
         }
 
+        #galeria {
+            text-align: center; /* Centra el contenido dentro del contenedor de la galería */
+        }
+
         #galeria .imagenes {
-            display: block; /* Cambiado de flex a block para disposición vertical */
-            text-align: center; /* Centra las imágenes horizontalmente */
+            display: block; /* Cambia el display a block para disposición vertical */
         }
 
         #galeria img {
+            display: block; /* Asegura que cada imagen esté en su propia línea */
             width: auto; /* Mantiene el tamaño proporcional de la imagen */
             height: 300px; /* Mantiene la altura de la imagen */
             border-radius: 15px; /* Bordes redondeados */
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para las imágenes */
-            margin: 10px 0; /* Espacio entre las imágenes verticalmente */
-        }
+            margin: 10px auto; /* Espacio entre las imágenes verticalmente y centra las imágenes */
+}
 
     </style>
 </head>
