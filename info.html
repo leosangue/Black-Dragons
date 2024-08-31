@@ -225,16 +225,16 @@
         }
 
         #galeria .imagenes {
-            display: flex;
-            justify-content: center;
-            gap: 20px; /* Espacio entre las imágenes */
+            display: block; /* Cambiado de flex a block para disposición vertical */
+            text-align: center; /* Centra las imágenes horizontalmente */
         }
 
         #galeria img {
-            width: auto; /* Ancho de cada imagen */
-            height: 300px; /* Mantiene la proporción de las imágenes */
+            width: auto; /* Mantiene el tamaño proporcional de la imagen */
+            height: 300px; /* Mantiene la altura de la imagen */
             border-radius: 15px; /* Bordes redondeados */
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para las imágenes */
+            margin: 10px 0; /* Espacio entre las imágenes verticalmente */
         }
 
     </style>
