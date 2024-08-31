@@ -203,6 +203,30 @@
             color: white; /* Color del texto para que contraste con el fondo oscuro */
             max-width: 50%; /* Asegura que el texto no ocupe demasiado espacio */
         }
+        #galeria {
+            text-align: center;
+            margin: 40px 0; /* Espacio alrededor de la sección */
+        }
+
+        #galeria h2 {
+            color: #b30000; /* Color del subtítulo */
+            font-family: 'Black Dragons', Tahoma, sans-serif;
+            margin-bottom: 20px; /* Espacio debajo del subtítulo */
+        }
+
+        #galeria .imagenes {
+            display: flex;
+            justify-content: center;
+            gap: 20px; /* Espacio entre las imágenes */
+        }
+
+        #galeria img {
+            width: 200px; /* Ancho de cada imagen */
+            height: auto; /* Mantiene la proporción de las imágenes */
+            border-radius: 15px; /* Bordes redondeados */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para las imágenes */
+        }
+
     </style>
 </head>
 <body>
@@ -224,10 +248,7 @@
 
         <!-- Sección donde se incluye el video y el texto -->
         <section id="video-section">
-            <video controls>
-                <source src="images/vid.mp4" type="video/mp4">
-                Tu navegador no soporta el elemento de video.
-            </video>         
+                   
             <div class="texto">
                 <p>
                     Black Dragons es una campaña que estuvo presente dentro de la sociedad de alumnos durante el ciclo 2023 - 2024 en secundaria, y ahora, conformada por las mismas personas, se postulará de nuevo en la prepa CEDI. Algunos de nuestras actividades hechas el ciclo pasado fueron:
@@ -254,11 +275,24 @@
                 </p>
 
             </div>
+            <video controls>
+                <source src="images/vid.mp4" type="video/mp4">
+                Tu navegador no soporta el elemento de video.
+            </video>  
         </section>
 
         <section id="ideologia">
             <p>En conclusión, somos una campaña con experiencia en esta escuela, y este año queremos ser parte de la sociedad de alumnos de nuevo modificando y agregando propuestas beneficiosas para todo el alumnado.</p>
         </section>
+        <section id="galeria">
+            <h2>Galería</h2>
+            <div class="imagenes">
+                <img src="images/torneofifa.jpg" alt="Imagen 1">
+                <img src="images/2.png" alt="Imagen 2">
+                <img src="images/3.png" alt="Imagen 3">
+            </div>
+        </section>
+        
         <a href="https://www.instagram.com/blackdragons.cedi/" target="_blank" style="display: flex; align-items: center; text-decoration: none; color: white;">
             <img src="images/ig.webp" alt="Instagram" style="width: 100px; height: auto; margin-right: 10px;">
             <span style="font-size: 18px; font-weight: bold;">&lt;--- Síguenos en Instagram</span>
