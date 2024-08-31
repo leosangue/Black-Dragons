@@ -186,15 +186,17 @@
 
         #video-section {
             display: flex;
-            align-items: center;
-            justify-content: center; /* Centra el contenido horizontalmente */
+            flex-direction: column; /* Cambia la dirección del flex a columna */
+            align-items: center; /* Centra el contenido horizontalmente */
+            justify-content: center; /* Centra el contenido verticalmente */
             margin: 40px 0;
         }
 
         #video-section video {
-            width: 30%; /* Ajusta el tamaño del video aquí */
-            margin-right: 20px; /* Espacio entre el video y el texto */
+            width: 30%; /* Mantiene el tamaño del video */
+            margin-bottom: 20px; /* Espacio entre el video y el texto */
         }
+
 
         #video-section .texto {
             font-size: 20px; /* Ajusta el tamaño del texto según tus necesidades */
