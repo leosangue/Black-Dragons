@@ -99,10 +99,10 @@
 
         #inicio {
             display: flex;
+            flex-direction: column; /* Cambia la dirección del flujo a columna */
             align-items: center;
-            justify-content: center;
-            text-align: center; /* Centrado horizontal */
-            margin-bottom: 40px; /* Espacio adicional debajo de la sección */
+            text-align: center;
+            margin-bottom: 40px;
         }
 
         #inicio p {
@@ -119,12 +119,11 @@
 
         #ideologia {
             display: flex;
+            flex-direction: column; /* Cambia la dirección del flujo a columna */
             align-items: center;
-            justify-content: center;
-            text-align: justify; /* Justificar el texto */
-            margin-bottom: 40px; /* Espacio adicional debajo de la sección */
+            text-align: justify;
+            margin-bottom: 40px;
         }
-
         #ideologia img {
             width: 16.67%; /* Reducido a 2/3 de su tamaño original de 25% */
             height: auto;
@@ -139,16 +138,16 @@
 
         #objetivos {
             display: flex;
-            align-items: center; /* Centra verticalmente el contenido */
-            justify-content: flex-start; /* Alinea el contenido a la izquierda */
-            text-align: left; /* Texto alineado a la izquierda */
-            margin-bottom: 40px; /* Espacio adicional debajo de la sección */
-            padding-left: 40px; /* Mayor separación desde el borde izquierdo de la página */
+            flex-direction: column; /* Cambia la dirección del flujo a columna */
+            align-items: center;
+            text-align: left;
+            margin-bottom: 40px;
+            padding-left: 0; /* Elimina la separación izquierda añadida previamente */
         }
 
         #objetivos .texto {
-            margin-right: 20px; /* Espacio entre el texto y la imagen */
-            font-size: 25px; /* Tamaño de fuente para el título */
+            margin-bottom: 20px; /* Espacio entre el texto y la imagen */
+            font-size: 25px;
         }
 
         #objetivos ul {
