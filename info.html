@@ -98,12 +98,12 @@
         }
 
         #inicio {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center; /* Centrado horizontal */
-            margin-bottom: 40px; /* Espacio adicional debajo de la sección */
+            padding: 20px; /* Añade espacio alrededor del contenido dentro de la sección */
+            text-align: left; /* Alinea el texto a la izquierda */
+            margin: 0 auto; /* Mantiene la separación entre los bordes y el texto */
+            max-width: 80%; /* Limita el ancho máximo del contenido */
         }
+
 
         #inicio p {
             font-size: 25px; /* Tamaño del texto aumentado */
@@ -275,10 +275,6 @@
                 </p>
 
             </div>
-            <video controls>
-                <source src="images/vid.mp4" type="video/mp4">
-                Tu navegador no soporta el elemento de video.
-            </video>  
         </section>
 
         <section id="ideologia">
@@ -288,7 +284,10 @@
             <h2>Galería</h2>
             <div class="imagenes">
                 <img src="images/torneofifa.jpg" alt="Imagen 1">
-                <img src="images/2.png" alt="Imagen 2">
+                <video controls>
+                    <source src="images/vid.mp4" type="video/mp4">
+                    Tu navegador no soporta el elemento de video.
+                </video>  
                 <img src="images/3.png" alt="Imagen 3">
             </div>
         </section>
